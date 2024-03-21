@@ -1,5 +1,5 @@
 
-DROP PROCEDURE InsertFactSalesFromStaging;
+--DROP PROCEDURE InsertFactSalesFromStaging;
 
 CREATE PROCEDURE InsertFactSalesFromStaging
 AS
@@ -115,4 +115,4 @@ BEGIN
 END;
 
 
-EXEC InsertFactSalesFromStaging;
+--EXEC InsertFactSalesFromStaging;
