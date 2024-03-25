@@ -4,30 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Website with Embedded Power BI Report</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>PC Analysis KETRO</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Custom styles to make the iframe full-page */
-        .full-page-iframe {
-            position: fixed;
-            top: 0;
-            left: 0;
+        /* Set iframe to fill the entire page */
+        iframe {
             width: 100%;
-            height: 100%;
+            height: 100vh;
             border: none;
         }
     </style>
 </head>
 
-<body><iframe class="full-page-iframe" title="PC ANALYSIS KETRO"
-        src="https://app.powerbi.com/view?r=eyJrIjoiMWEzMmY1MGQtMWIxNi00ZWYyLWFkZWQtMzVkZWY2MDIyMDBiIiwidCI6ImI3MzY2MWU1LTJiYzAtNDRmYS05MTU0LTdkMjMwNDMxNGIyMCIsImMiOjh9&navContentPaneEnabled=false"
-        frameborder="0" allowFullScreen="true"></iframe>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <iframe title="PC Analysis KETRO"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiM2U0NTY2ZDEtMTk0ZS00NDRiLWFlYWEtZTA0YmU2OWE4ZGJhIiwidCI6ImI3MzY2MWU1LTJiYzAtNDRmYS05MTU0LTdkMjMwNDMxNGIyMCIsImMiOjh9&embedImagePlaceholder=true"
+                    frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+        </div>
+    </div>
 
-
-    <!-- Bootstrap JS (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
