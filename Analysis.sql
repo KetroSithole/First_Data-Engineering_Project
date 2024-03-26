@@ -378,7 +378,8 @@ FROM
 GROUP BY
     [PCTypeID]
 ORDER BY
-    Sales_Count DESC -- Calculate profit margin for each sale and analyze profitability across different products or customers
+    Sales_Count DESC
+ -- Calculate profit margin for each sale and analyze profitability across different products or customers
     -- Identify opportunities to optimize pricing and cost management
     -- Example: Profit margin calculation
 SELECT
@@ -521,3 +522,19 @@ FROM
 ORDER BY
     SPM.PC_Make,
     SPT.PC_Model;
+
+
+
+
+------------------------------ TOP 10 COUNTRIES
+SELECT TOP 10
+    CS.[Country_or_State] AS Country,
+    SUM(FS.[Sale_Price]) AS TotalSales
+FROM 
+    [Computers_dataware_house].[dbo].[FactSales] FS
+JOIN 
+    [Computers_dataware_house].[dbo].[Dim_Country_State] CS ON FS.[ProvinceCityID] = CS.[CountryStateID]
+GROUP BY 
+    CS.[Country_or_State]
+ORDER BY 
+    TotalSales DESC;
