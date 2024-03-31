@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="KETRO.computer_staging"
+  DTS:DTSID="{C5799EC6-CC6B-4E60-ACF8-E8EC177F5E95}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=KETRO;Initial Catalog=computer_staging;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-computer_analysis_ssis_package-{C5799EC6-CC6B-4E60-ACF8-E8EC177F5E95}KETRO.computer_staging;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
